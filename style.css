@@ -13,17 +13,28 @@ body {
 
 .container {
   min-height: 100vh;
-  width: 100%;
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 h1 {
-  color: red;
+  color: cornflowerblue;
 }
 
+hr {
+  margin: 20px;
+  width: 400px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* modal */
 .banner {
   font-size: 1.3rem;
   display: flex;
@@ -41,26 +52,12 @@ h1 {
 
 .modal-btn {
   font-family: 'Roboto Condensed', sans-serif;
-  display: block;
   padding: 6px 10px;
-  color: white;
+  color: #70a1ff;
   font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  background-color: #ced6e0;
-  border: 2px solid ;
-  border-radius: 10px;
-  margin-top: 10px;
-  transition: .3s ease; 
-  transition-property: background-color, color;
   cursor: pointer;
-  outline:none;
+  outline: none;
 }
-
-.modal-btn:hover {
-  background-color: #70a1ff;
-}
-
 
 .modal-overlay {
   background-color: rgba(0, 0, 0, 0.6);
@@ -77,6 +74,11 @@ h1 {
 }
 
 .open-modal {
+  visibility: visible;
+  z-index:10;
+}
+
+.save-modal {
   visibility: visible;
   z-index:10;
 }
